@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* ------------------Menú Navegable------------------- */
+.navbar {
+  background-color: #efd7d7;
+}
+
+.navbar .navbar-brand img {
+  width: 150px;
+}
+
+.dropdown-toggle {
+  color: white;
+}
+
+.collapse .nav li a {
+  color: white;
+  font-size: 17px;
+}
+
+.collapse .nav li a:hover {
+  color: #bba780;
+}
+
+.collapse .nav .dropdown .dropdown-menu li a {
+  color: #bba780;
+}
+
+@media (min-width: 760px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+
+/* --------- Main --------- */
+.portada1 {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.tituloSecciones {
+  color: #efd7d7;
+  font-family: 'Belleza', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.categorías {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categorías .contenedorCategorías {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorCategorías img {
+  width: 300px;
+  height: 400px;
+  padding: 60px 20px 6px 20px;
+}
+
+.subtitulo1 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #bba780;
+}
+
+.contenedorCategorías:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (min-width: 760px) {
+  .categorías {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 80px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* ------- Carousel ------- */
+.carousel {
+  margin-top: 25px;
+}
+
+.carousel .carousel-control.left {
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel .carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+/* --------- Div: Más Vendidos --------- */
+.masVendidos {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+}
+
+.productoMasVendido img {
+  width: 180px;
+  height: 200px;
+}
+
+@media (min-width: 760px) {
+  .productoMasVendido img {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+/* ------ Div: Instagram ------- */
+.instagram {
+  background-color: #efd7d7;
+  margin-top: 40px;
+  width: 100%;
+  height: 150px;
+}
+
+.instagram h3 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 145px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ----- Div: Portada 2 ----- */
+.portada2 img {
+  width: 100%;
+  margin: 20px auto;
+}
+/*# sourceMappingURL=index.css.map */

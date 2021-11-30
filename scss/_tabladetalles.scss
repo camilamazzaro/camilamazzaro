@@ -1,0 +1,128 @@
+
+.tabla{
+    border: 2px solid;
+    border-color:#bba780 ;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .tabla__filas{
+        color: #bba780;
+
+        th{
+            background-color:#efd7d7;
+            border: 1px solid;
+        }
+        
+        tr td{
+            border: 1px solid;
+        }
+    }
+}
+
+section {
+    margin: 10px;
+    display: inline;
+    padding: 10px;
+    border: 4px;
+}
+
+.consejos{
+    background-color: #efd7d7;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    .consejos__titulo--font {
+        color: white;
+        font-family: 'Belleza', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .consejos__parrafo{
+        margin-bottom: 20px;
+
+        p{
+            font-size: 20px;
+            font-style: italic;
+            color: grey;
+        }
+    
+        .subtitulo2 {
+            color: #bba780;
+            text-align: left;
+        }
+    }
+}
+
+
+
+@media (min-width: 760px){
+
+    table{
+        width: 900px;
+        height: 400px;
+    }
+
+    tr{
+        text-align: center;
+    }
+}
+
+@for $i from 1 through 3{
+    .anuncio-#{$i}{width: 400px * $i;}
+}
+
+.anuncio-1{
+    background-color:#bba780;
+    margin-left: 30px;
+    transition: all 2s;
+    height: 80px;
+    
+    .anuncio-1__h3--font{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+        font-style: italic;
+        color:white;
+    }
+}
+
+.anuncio-1:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.anuncio-2{
+    background-color:#efd7d7;
+    margin-left: 30px;
+    height: 40px;
+
+    .anuncio-2__h4--font{
+        text-align: left; 
+        line-height: 40px;
+        font-size: 20px;
+        font-style: italic;
+        color:#bba780;
+        margin-left: 10px;
+    }
+}
+
+.anuncio-3{
+    background: #bba780;
+    height: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+
+    .anuncio-3__h4--font{
+        margin-left: 10px;
+        color: white;
+        line-height: 40px;
+    }
+}

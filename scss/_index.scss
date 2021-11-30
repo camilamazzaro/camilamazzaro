@@ -1,0 +1,266 @@
+/* ------------------Menú Navegable------------------- */
+
+.navbar{
+    background-color: #efd7d7;
+
+    .navbar-brand img{
+        width: 150px;
+    }
+
+}
+
+.dropdown-toggle{
+    color: white;
+}
+
+.collapse .nav li a{
+    color: white;
+    font-size: 17px;
+}
+
+.collapse .nav li a:hover{
+    color:#bba780;
+}
+
+.collapse .nav .dropdown .dropdown-menu li a{
+    color: #bba780;
+}
+
+@media (min-width:760px){
+
+    .navbar-brand img{
+        width: 200px;
+    }
+
+}
+
+/* --------- Main --------- */
+
+.portada1__img--size{
+    width: 100%;
+    margin: 20px auto; 
+}
+
+.tituloSecciones{
+    color: #efd7d7;
+    font-family: 'Belleza', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.categorías{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contenedorCategorías{
+        transition: all 1s;
+
+        .contenedorCategorías__img--size{
+            width: 300px;
+            height:400px;
+            padding: 60px 20px 6px 20px;
+        }
+
+        .contenedorCategorías__subtitulo{
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            color: #bba780;
+        }
+
+    }
+
+}
+
+.subtitulo1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #bba780;
+}
+
+.contenedorCategorías:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+@media (min-width: 760px){
+
+
+    .categorías{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/* ------- Carousel ------- */
+
+.carousel{
+    margin-top: 25px;
+
+    .carousel-control.left {
+        background-image:none;
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
+    }
+    
+    .carousel-control.right {
+        left: auto; right: 0;
+        background-image:none;
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
+    }
+}
+
+
+/* --------- Div: Más Vendidos --------- */
+
+.masVendidos{
+    margin-top: 40px;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+
+    .masVendidos__producto--size{
+        width: 180px;
+        height: 200px;
+    }
+
+    .masVendidos__subtitulo{
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        color: #bba780;
+    }
+
+}
+
+@media (min-width: 760px){
+
+    .productoMasVendido img{
+        width: 280px;
+        height: 300px;
+    }
+
+}
+
+/* ------ Div: Redes ------- */
+
+.redes__text--font{
+    font-size: 25px;
+    text-align: center;
+    color: #efd7d7;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+}
+
+
+.redes{
+    background-color: #efd7d7;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+@each $redes in instagram, facebook, twitter {
+    .#{$redes}-icon img{
+
+        width: 50px;
+        height: 50px;
+}
+}
+
+
+$redes: (
+    instagram: white,
+    facebook: #bba780,
+    twitter: white
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+
+
+/* ----- Div: Portada 2 ----- */
+
+.portada2__img--size{
+    width: 100%;
+    margin: 20px auto; 
+}
+
+/* ---------------- footer -------------- */
+
+footer{
+
+    background-color: #efd7d7;
+    height: 400px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .footerContainer{
+
+        margin-left: 30px;
+        padding-top: 25px;
+
+        .footerTitle{
+            font-size: 50px;
+            text-align: left;
+            color: white;
+        }
+
+        .mapSecciones{
+            padding-top: 20px;
+            line-height: 10px;
+
+            h4{
+                font-size: 30px;
+                color: #bba780;
+            }
+
+            a{
+                color: grey;
+            }
+        }
+
+    }
+
+    .instagramAnuncio{
+        padding-top: 130px;
+    
+        span{
+            font-size: 30px;
+            color:white;
+        }
+    
+        .iconoIg img{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 20px;
+            margin-left: 120px;
+            margin-top: 15px;
+        }
+    }
+}
+
+
